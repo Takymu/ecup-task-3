@@ -1,0 +1,40 @@
+{
+  "name": "l_day413_s7",
+  "val_rmsle": 1.6854885272566307,
+  "rank_score": 1.668326987833752,
+  "cell": "gru",
+  "unit": "day",
+  "seq_len": 413,
+  "ch": 8,
+  "hidden": 256,
+  "layers": 2,
+  "n_anchors": 6,
+  "anchor_stride": 2,
+  "lr": 0.001,
+  "seed": 7,
+  "pool": "mean",
+  "fusion_tag": "",
+  "feat_cols": null,
+  "val_anchor": "2026-01-14",
+  "aux_horizons": [],
+  "anchor_step_days": 0,
+  "target": "gmv",
+  "aux_weight": 0.3,
+  "tail_days": 0,
+  "epoch_ranks": [
+    1.6743328391135444,
+    1.6710386594056719,
+    1.670982175370883,
+    1.668326987833752,
+    1.668481733898123,
+    1.6684595279901293
+  ],
+  "best_epoch": 4,
+  "avg_ranks": {
+    "avg_last2": 1.6683549252816625,
+    "avg_last3": 1.668249461831327,
+    "avg_last4": 1.6687543143102515,
+    "avg_ep2plus": 1.6688297405030141,
+    "last": 1.6684595279901293
+  }
+}

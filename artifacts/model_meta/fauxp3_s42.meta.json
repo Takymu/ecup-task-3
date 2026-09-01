@@ -1,0 +1,52 @@
+{
+  "name": "fauxp3_s42",
+  "val_rmsle": 1.7391451726985578,
+  "rank_score": 1.6931286610965361,
+  "cell": "gru",
+  "unit": "week",
+  "seq_len": 66,
+  "ch": 8,
+  "hidden": 256,
+  "layers": 2,
+  "n_anchors": 16,
+  "anchor_stride": 1,
+  "lr": 0.001,
+  "seed": 42,
+  "pool": "mean",
+  "fusion_tag": "",
+  "feat_cols": null,
+  "val_anchor": "2025-12-31",
+  "aux_horizons": [
+    7,
+    14
+  ],
+  "anchor_step_days": 0,
+  "target": "gmv",
+  "aux_weight": 0.3,
+  "tail_days": 14,
+  "loss": "ziln",
+  "mix_w": 1.0,
+  "user_emb": 0,
+  "ctx": true,
+  "ctx_set": "v1",
+  "anchor_offset_days": 0,
+  "warmup": 0.0,
+  "epoch_ranks": [
+    1.6939512490241184,
+    1.6959180329121628,
+    1.7015827963487526,
+    1.7024259211949977,
+    1.696591643374586,
+    1.6952210762076192,
+    1.6931286610965361,
+    1.6956414382604896
+  ],
+  "best_epoch": 7,
+  "avg_ranks": {
+    "avg_last2": 1.6943306091301693,
+    "avg_last3": 1.6944957195833044,
+    "avg_last4": 1.6947598973072262,
+    "avg_ep2plus": 1.6959579208746414,
+    "last": 1.6956414382604896
+  }
+}

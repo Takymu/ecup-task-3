@@ -1,0 +1,23 @@
+{
+  "name": "pact_gru",
+  "val_rmsle": 0.5038442697977089,
+  "rank_score": 0.49683494678290485,
+  "cell": "gru",
+  "unit": "week",
+  "seq_len": 52,
+  "ch": 8,
+  "hidden": 256,
+  "layers": 2,
+  "n_anchors": 16,
+  "anchor_stride": 1,
+  "lr": 0.002,
+  "seed": 42,
+  "pool": "mean",
+  "fusion_tag": "",
+  "feat_cols": null,
+  "val_anchor": "2025-11-14",
+  "aux_horizons": [],
+  "anchor_step_days": 0,
+  "target": "active",
+  "aux_weight": 0.3
+}

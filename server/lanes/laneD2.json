@@ -1,0 +1,750 @@
+[
+ {
+  "name": "auxcnt_s4",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "auxcnt_s4",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "4",
+   "--aux-count",
+   "orddays,nord"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s4_valpred.parquet"
+ },
+ {
+  "name": "auxcnt_s4_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s4",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s4_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s4.pt"
+  ]
+ },
+ {
+  "name": "auxcnt_s5",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "auxcnt_s5",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "5",
+   "--aux-count",
+   "orddays,nord"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s5_valpred.parquet"
+ },
+ {
+  "name": "auxcnt_s5_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s5",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s5_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s5.pt"
+  ]
+ },
+ {
+  "name": "auxcnt_s6",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "auxcnt_s6",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "6",
+   "--aux-count",
+   "orddays,nord"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s6_valpred.parquet"
+ },
+ {
+  "name": "auxcnt_s6_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s6",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s6_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s6.pt"
+  ]
+ },
+ {
+  "name": "auxcnt_s7",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "auxcnt_s7",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "7",
+   "--aux-count",
+   "orddays,nord"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s7_valpred.parquet"
+ },
+ {
+  "name": "auxcnt_s7_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s7",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s7_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s7.pt"
+  ]
+ },
+ {
+  "name": "auxcnt_s8",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "auxcnt_s8",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "8",
+   "--aux-count",
+   "orddays,nord"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s8_valpred.parquet"
+ },
+ {
+  "name": "auxcnt_s8_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s8",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s8_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s8.pt"
+  ]
+ },
+ {
+  "name": "auxcnt_s9",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "auxcnt_s9",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "9",
+   "--aux-count",
+   "orddays,nord"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s9_valpred.parquet"
+ },
+ {
+  "name": "auxcnt_s9_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s9",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s9_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s9.pt"
+  ]
+ },
+ {
+  "name": "auxcnt_s10",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "auxcnt_s10",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "10",
+   "--aux-count",
+   "orddays,nord"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s10_valpred.parquet"
+ },
+ {
+  "name": "auxcnt_s10_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s10",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s10_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s10.pt"
+  ]
+ },
+ {
+  "name": "auxcnt_s11",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "auxcnt_s11",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "11",
+   "--aux-count",
+   "orddays,nord"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s11_valpred.parquet"
+ },
+ {
+  "name": "auxcnt_s11_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s11",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s11_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s11.pt"
+  ]
+ },
+ {
+  "name": "auxcnt_s12",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "auxcnt_s12",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "12",
+   "--aux-count",
+   "orddays,nord"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s12_valpred.parquet"
+ },
+ {
+  "name": "auxcnt_s12_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s12",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s12_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s12.pt"
+  ]
+ },
+ {
+  "name": "auxcnt_s13",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "auxcnt_s13",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "13",
+   "--aux-count",
+   "orddays,nord"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s13_valpred.parquet"
+ },
+ {
+  "name": "auxcnt_s13_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s13",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s13_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s13.pt"
+  ]
+ },
+ {
+  "name": "auxcnt_s14",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "auxcnt_s14",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "14",
+   "--aux-count",
+   "orddays,nord"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s14_valpred.parquet"
+ },
+ {
+  "name": "auxcnt_s14_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s14",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s14_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s14.pt"
+  ]
+ },
+ {
+  "name": "auxcnt_s15",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "auxcnt_s15",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "15",
+   "--aux-count",
+   "orddays,nord"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s15_valpred.parquet"
+ },
+ {
+  "name": "auxcnt_s15_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s15",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s15_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s15.pt"
+  ]
+ },
+ {
+  "name": "auxcnt_s16",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "auxcnt_s16",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "16",
+   "--aux-count",
+   "orddays,nord"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s16_valpred.parquet"
+ },
+ {
+  "name": "auxcnt_s16_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s16",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s16_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s16.pt"
+  ]
+ },
+ {
+  "name": "auxcnt_s17",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "auxcnt_s17",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "17",
+   "--aux-count",
+   "orddays,nord"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s17_valpred.parquet"
+ },
+ {
+  "name": "auxcnt_s17_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s17",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s17_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s17.pt"
+  ]
+ },
+ {
+  "name": "auxcnt_s18",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "auxcnt_s18",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "18",
+   "--aux-count",
+   "orddays,nord"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s18_valpred.parquet"
+ },
+ {
+  "name": "auxcnt_s18_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s18",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s18_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s18.pt"
+  ]
+ },
+ {
+  "name": "auxcnt_s19",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "auxcnt_s19",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "19",
+   "--aux-count",
+   "orddays,nord"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s19_valpred.parquet"
+ },
+ {
+  "name": "auxcnt_s19_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s19",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s19_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s19.pt"
+  ]
+ },
+ {
+  "name": "auxcnt_s20",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "auxcnt_s20",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "20",
+   "--aux-count",
+   "orddays,nord"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s20_valpred.parquet"
+ },
+ {
+  "name": "auxcnt_s20_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s20",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s20_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s20.pt"
+  ]
+ }
+]

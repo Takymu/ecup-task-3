@@ -1,0 +1,698 @@
+[
+{
+"name": "hdp3_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"hdp3_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"40",
+"--val-anchor",
+"2025-12-31",
+"--seed",
+"42",
+"--hist-drop",
+"0.5",
+"--hist-min",
+"6"
+],
+"out": "/root/ecup/artifacts/models/hdp3_s42_valpred.parquet"
+},
+{
+"name": "hd_s42_L6",
+"cmd": [
+"predict_seq.py",
+"--name",
+"hd_s42",
+"--pred-anchor",
+"2026-01-14",
+"--hist-len",
+"6",
+"--stem-suffix",
+"_L6"
+],
+"out": "/root/ecup/artifacts/models/hd_s42_L6_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/hd_s42.pt"
+]
+},
+{
+"name": "hd_s42_L8",
+"cmd": [
+"predict_seq.py",
+"--name",
+"hd_s42",
+"--pred-anchor",
+"2026-01-14",
+"--hist-len",
+"8",
+"--stem-suffix",
+"_L8"
+],
+"out": "/root/ecup/artifacts/models/hd_s42_L8_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/hd_s42.pt"
+]
+},
+{
+"name": "hd_s42_L10",
+"cmd": [
+"predict_seq.py",
+"--name",
+"hd_s42",
+"--pred-anchor",
+"2026-01-14",
+"--hist-len",
+"10",
+"--stem-suffix",
+"_L10"
+],
+"out": "/root/ecup/artifacts/models/hd_s42_L10_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/hd_s42.pt"
+]
+},
+{
+"name": "hd_s42_L16",
+"cmd": [
+"predict_seq.py",
+"--name",
+"hd_s42",
+"--pred-anchor",
+"2026-01-14",
+"--hist-len",
+"16",
+"--stem-suffix",
+"_L16"
+],
+"out": "/root/ecup/artifacts/models/hd_s42_L16_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/hd_s42.pt"
+]
+},
+{
+"name": "hd_s42_Lfull",
+"cmd": [
+"predict_seq.py",
+"--name",
+"hd_s42",
+"--pred-anchor",
+"2026-01-14",
+"--stem-suffix",
+"_Lfull"
+],
+"out": "/root/ecup/artifacts/models/hd_s42_Lfull_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/hd_s42.pt"
+]
+},
+{
+"name": "hdp3_s42_L6",
+"cmd": [
+"predict_seq.py",
+"--name",
+"hdp3_s42",
+"--pred-anchor",
+"2025-12-31",
+"--hist-len",
+"6",
+"--stem-suffix",
+"_L6"
+],
+"out": "/root/ecup/artifacts/models/hdp3_s42_L6_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/hdp3_s42.pt"
+]
+},
+{
+"name": "hdp3_s42_L8",
+"cmd": [
+"predict_seq.py",
+"--name",
+"hdp3_s42",
+"--pred-anchor",
+"2025-12-31",
+"--hist-len",
+"8",
+"--stem-suffix",
+"_L8"
+],
+"out": "/root/ecup/artifacts/models/hdp3_s42_L8_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/hdp3_s42.pt"
+]
+},
+{
+"name": "hdp3_s42_L10",
+"cmd": [
+"predict_seq.py",
+"--name",
+"hdp3_s42",
+"--pred-anchor",
+"2025-12-31",
+"--hist-len",
+"10",
+"--stem-suffix",
+"_L10"
+],
+"out": "/root/ecup/artifacts/models/hdp3_s42_L10_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/hdp3_s42.pt"
+]
+},
+{
+"name": "hdp3_s42_L16",
+"cmd": [
+"predict_seq.py",
+"--name",
+"hdp3_s42",
+"--pred-anchor",
+"2025-12-31",
+"--hist-len",
+"16",
+"--stem-suffix",
+"_L16"
+],
+"out": "/root/ecup/artifacts/models/hdp3_s42_L16_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/hdp3_s42.pt"
+]
+},
+{
+"name": "hdp3_s42_Lfull",
+"cmd": [
+"predict_seq.py",
+"--name",
+"hdp3_s42",
+"--pred-anchor",
+"2025-12-31",
+"--stem-suffix",
+"_Lfull"
+],
+"out": "/root/ecup/artifacts/models/hdp3_s42_Lfull_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/hdp3_s42.pt"
+]
+},
+{
+"name": "hdns_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"hdns_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-05-01",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"32",
+"--seed",
+"42",
+"--hist-drop",
+"0.5",
+"--hist-min",
+"6"
+],
+"out": "/root/ecup/artifacts/models/hdns_s42_valpred.parquet"
+},
+{
+"name": "hdnsp3_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"hdnsp3_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-05-01",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"30",
+"--val-anchor",
+"2025-12-31",
+"--seed",
+"42",
+"--hist-drop",
+"0.5",
+"--hist-min",
+"6"
+],
+"out": "/root/ecup/artifacts/models/hdnsp3_s42_valpred.parquet"
+},
+{
+"name": "pst_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"pst_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"46",
+"--seed",
+"42",
+"--step-sup",
+"0.3"
+],
+"out": "/root/ecup/artifacts/models/pst_s42_valpred.parquet"
+},
+{
+"name": "pstp3_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"pstp3_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"40",
+"--val-anchor",
+"2025-12-31",
+"--seed",
+"42",
+"--step-sup",
+"0.3"
+],
+"out": "/root/ecup/artifacts/models/pstp3_s42_valpred.parquet"
+},
+{
+"name": "jit_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"jit_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"46",
+"--seed",
+"42",
+"--gmv-noise",
+"0.3"
+],
+"out": "/root/ecup/artifacts/models/jit_s42_valpred.parquet"
+},
+{
+"name": "jitp3_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"jitp3_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"40",
+"--val-anchor",
+"2025-12-31",
+"--seed",
+"42",
+"--gmv-noise",
+"0.3"
+],
+"out": "/root/ecup/artifacts/models/jitp3_s42_valpred.parquet"
+},
+{
+"name": "hd_s42_stale",
+"cmd": [
+"predict_seq.py",
+"--name",
+"hd_s42"
+],
+"out": "/root/ecup/artifacts/models/hd_s42_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/hd_s42.pt"
+]
+},
+{
+"name": "pst_s42_stale",
+"cmd": [
+"predict_seq.py",
+"--name",
+"pst_s42"
+],
+"out": "/root/ecup/artifacts/models/pst_s42_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/pst_s42.pt"
+]
+},
+{
+"name": "jit_s42_stale",
+"cmd": [
+"predict_seq.py",
+"--name",
+"jit_s42"
+],
+"out": "/root/ecup/artifacts/models/jit_s42_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/jit_s42.pt"
+]
+},
+{
+"name": "hdns_s42_stale",
+"cmd": [
+"predict_seq.py",
+"--name",
+"hdns_s42"
+],
+"out": "/root/ecup/artifacts/models/hdns_s42_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/hdns_s42.pt"
+]
+},
+{
+"name": "hd_s42_refit",
+"cmd": [
+"predict_seq.py",
+"--name",
+"hd_s42",
+"--refit",
+"--avg-last",
+"2"
+],
+"out": "/root/ecup/artifacts/models/hd_s42_full_avg2_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/hd_s42.pt"
+]
+},
+{
+"name": "pst_s42_refit",
+"cmd": [
+"predict_seq.py",
+"--name",
+"pst_s42",
+"--refit",
+"--avg-last",
+"2"
+],
+"out": "/root/ecup/artifacts/models/pst_s42_full_avg2_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/pst_s42.pt"
+]
+},
+{
+"name": "lead_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"lead_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"46",
+"--seed",
+"42",
+"--aux-lead",
+"30"
+],
+"out": "/root/ecup/artifacts/models/lead_s42_valpred.parquet"
+},
+{
+"name": "leadp3_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"leadp3_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"40",
+"--val-anchor",
+"2025-12-31",
+"--seed",
+"42",
+"--aux-lead",
+"30"
+],
+"out": "/root/ecup/artifacts/models/leadp3_s42_valpred.parquet"
+},
+{
+"name": "afe_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"afe_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"46",
+"--seed",
+"42",
+"--afe"
+],
+"out": "/root/ecup/artifacts/models/afe_s42_valpred.parquet"
+},
+{
+"name": "afep3_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"afep3_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"40",
+"--val-anchor",
+"2025-12-31",
+"--seed",
+"42",
+"--afe"
+],
+"out": "/root/ecup/artifacts/models/afep3_s42_valpred.parquet"
+},
+{
+"name": "sigfix_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"sigfix_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"46",
+"--seed",
+"42",
+"--sigma-fixed"
+],
+"out": "/root/ecup/artifacts/models/sigfix_s42_valpred.parquet"
+},
+{
+"name": "sigfixp3_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"sigfixp3_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"40",
+"--val-anchor",
+"2025-12-31",
+"--seed",
+"42",
+"--sigma-fixed"
+],
+"out": "/root/ecup/artifacts/models/sigfixp3_s42_valpred.parquet"
+},
+{
+"name": "lead_s42_stale",
+"cmd": [
+"predict_seq.py",
+"--name",
+"lead_s42"
+],
+"out": "/root/ecup/artifacts/models/lead_s42_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/lead_s42.pt"
+]
+},
+{
+"name": "afe_s42_stale",
+"cmd": [
+"predict_seq.py",
+"--name",
+"afe_s42"
+],
+"out": "/root/ecup/artifacts/models/afe_s42_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/afe_s42.pt"
+]
+},
+{
+"name": "sigfix_s42_stale",
+"cmd": [
+"predict_seq.py",
+"--name",
+"sigfix_s42"
+],
+"out": "/root/ecup/artifacts/models/sigfix_s42_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/sigfix_s42.pt"
+]
+}
+]

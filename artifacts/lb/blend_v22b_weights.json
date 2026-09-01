@@ -1,0 +1,53 @@
+{
+  "rank_blend_val": 1.665244835907732,
+  "family_weights": {
+    "ctx_top2": 0.4375,
+    "gru_bag": 0.25,
+    "day413_bag": 0.125,
+    "two_stage_bag": 0.125,
+    "tab_p131_bag": 0.0625
+  },
+  "members": {
+    "ctx_top2": [
+      "artifacts/models/r2_ctx_full_avg2_testpred.parquet",
+      "artifacts/models/r2_ctx_s5_full_avg2_testpred.parquet"
+    ],
+    "gru_bag": [
+      "artifacts/models/l_gru_h256x2_a16_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s1_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s2_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s3_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s4_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s5_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s6_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_c9_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_aux_full_testpred.parquet",
+      "artifacts/models/l_gru_h384_a24_s0_full_testpred.parquet",
+      "artifacts/models/l_gru_h384_a24_s1_full_testpred.parquet"
+    ],
+    "day413_bag": [
+      "artifacts/models/l_day413_gru_h256_full_testpred.parquet",
+      "artifacts/models/l_day413_s1_full_testpred.parquet",
+      "artifacts/models/l_day413_s2_full_testpred.parquet",
+      "artifacts/models/l_day413_s3_full_testpred.parquet",
+      "artifacts/models/l_day413_s4_full_testpred.parquet",
+      "artifacts/models/l_day413_s5_full_testpred.parquet",
+      "artifacts/models/l_day413_s6_full_testpred.parquet",
+      "artifacts/models/l_day413_s7_full_testpred.parquet",
+      "artifacts/models/l_day413_a10_s0_full_testpred.parquet",
+      "artifacts/models/l_day413_a10_s1_full_testpred.parquet"
+    ],
+    "two_stage_bag": [
+      "i:\\NSU\\ecup\\task3\\artifacts\\models\\srv_two_stage_full_testpred.parquet",
+      "artifacts/models/two_stage_s1_full_testpred.parquet",
+      "artifacts/models/two_stage_s2_full_testpred.parquet"
+    ],
+    "tab_p131_bag": [
+      "artifacts/models/l_tab_p131_full_testpred.parquet",
+      "artifacts/models/l_tab_p131_s1_full_testpred.parquet",
+      "artifacts/models/l_tab_p131_s2_full_testpred.parquet",
+      "artifacts/models/l_tab_p131_s3_full_testpred.parquet",
+      "artifacts/models/l_tab_p131_s4_full_testpred.parquet"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "pact_day",
+  "val_rmsle": 0.5033522012461306,
+  "rank_score": 0.4945681390578771,
+  "cell": "gru",
+  "unit": "day",
+  "seq_len": 413,
+  "ch": 8,
+  "hidden": 256,
+  "layers": 2,
+  "n_anchors": 6,
+  "anchor_stride": 2,
+  "lr": 0.001,
+  "seed": 42,
+  "pool": "mean",
+  "fusion_tag": "",
+  "feat_cols": null,
+  "val_anchor": "2025-11-14",
+  "aux_horizons": [],
+  "anchor_step_days": 0,
+  "target": "active",
+  "aux_weight": 0.3
+}

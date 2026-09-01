@@ -1,0 +1,49 @@
+{
+  "rank_blend_val": 1.6658436643945618,
+  "family_weights": {
+    "hyb_bag": 0.3333333333333333,
+    "gru_bag": 0.3333333333333333,
+    "day413_bag": 0.3333333333333333
+  },
+  "members": {
+    "hyb_bag": [
+      "artifacts/models/l_gru_hyb14_lr1_a16_full_avg2_testpred.parquet",
+      "artifacts/models/l_gru_hyb14_lr1_a16_s1_full_avg2_testpred.parquet",
+      "artifacts/models/l_gru_hyb14_lr1_a16_s2_full_avg2_testpred.parquet",
+      "artifacts/models/l_gru_hyb14_lr1_a16_s3_full_avg2_testpred.parquet",
+      "artifacts/models/l_gru_hyb14_lr1_a16_s4_full_avg2_testpred.parquet",
+      "artifacts/models/l_gru_hyb14_lr1_a16_s5_full_avg2_testpred.parquet",
+      "artifacts/models/l_gru_hyb14_lr1_a16_s6_full_avg2_testpred.parquet",
+      "artifacts/models/l_gru_hyb14_lr1_a16_s7_full_avg2_testpred.parquet",
+      "artifacts/models/l_gru_hyb14_lr1_a16_s8_full_avg2_testpred.parquet",
+      "artifacts/models/l_gru_hyb28_lr1_a16_full_avg2_testpred.parquet",
+      "artifacts/models/l_gru_hyb28_lr1_a16_s1_full_avg2_testpred.parquet",
+      "artifacts/models/l_gru_hyb28_lr1_a16_s2_full_avg2_testpred.parquet"
+    ],
+    "gru_bag": [
+      "artifacts/models/l_gru_h256x2_a16_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s1_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s2_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s3_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s4_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s5_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s6_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_c9_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_aux_full_testpred.parquet",
+      "artifacts/models/l_gru_h384_a24_s0_full_testpred.parquet",
+      "artifacts/models/l_gru_h384_a24_s1_full_testpred.parquet"
+    ],
+    "day413_bag": [
+      "artifacts/models/l_day413_gru_h256_full_testpred.parquet",
+      "artifacts/models/l_day413_s1_full_testpred.parquet",
+      "artifacts/models/l_day413_s2_full_testpred.parquet",
+      "artifacts/models/l_day413_s3_full_testpred.parquet",
+      "artifacts/models/l_day413_s4_full_testpred.parquet",
+      "artifacts/models/l_day413_s5_full_testpred.parquet",
+      "artifacts/models/l_day413_s6_full_testpred.parquet",
+      "artifacts/models/l_day413_s7_full_testpred.parquet",
+      "artifacts/models/l_day413_a10_s0_full_testpred.parquet",
+      "artifacts/models/l_day413_a10_s1_full_testpred.parquet"
+    ]
+  }
+}

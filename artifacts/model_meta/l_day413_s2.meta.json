@@ -1,0 +1,21 @@
+{
+  "name": "l_day413_s2",
+  "val_rmsle": 1.6755306817889584,
+  "rank_score": 1.6685689222503188,
+  "cell": "gru",
+  "unit": "day",
+  "seq_len": 413,
+  "ch": 8,
+  "hidden": 256,
+  "layers": 2,
+  "n_anchors": 6,
+  "anchor_stride": 2,
+  "lr": 0.001,
+  "seed": 2,
+  "pool": "mean",
+  "fusion_tag": "",
+  "feat_cols": null,
+  "val_anchor": "2026-01-14",
+  "aux_horizons": [],
+  "aux_weight": 0.3
+}

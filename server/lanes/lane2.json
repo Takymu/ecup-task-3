@@ -1,0 +1,402 @@
+[
+{
+"name": "ssp_pre",
+"cmd": [
+"train_seq.py",
+"--name",
+"ssp_pre",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"",
+"--horizon",
+"7",
+"--anchor-step-days",
+"3",
+"--n-anchors",
+"100",
+"--epochs",
+"2",
+"--seed",
+"42"
+],
+"out": "/root/ecup/artifacts/models/ssp_pre.meta.json"
+},
+{
+"name": "ssp_ft_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"ssp_ft_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"46",
+"--seed",
+"42",
+"--init-from",
+"ssp_pre"
+],
+"out": "/root/ecup/artifacts/models/ssp_ft_s42_valpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/ssp_pre.meta.json"
+]
+},
+{
+"name": "ssp_ftp3_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"ssp_ftp3_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"40",
+"--val-anchor",
+"2025-12-31",
+"--seed",
+"42",
+"--init-from",
+"ssp_pre"
+],
+"out": "/root/ecup/artifacts/models/ssp_ftp3_s42_valpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/ssp_pre.meta.json"
+]
+},
+{
+"name": "dn3_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"dn3_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--anchor-step-days",
+"3",
+"--n-anchors",
+"100",
+"--epochs",
+"3",
+"--seed",
+"42"
+],
+"out": "/root/ecup/artifacts/models/dn3_s42_valpred.parquet"
+},
+{
+"name": "pmask_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"pmask_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"46",
+"--seed",
+"42",
+"--pmask-from",
+"2025-11-19"
+],
+"out": "/root/ecup/artifacts/models/pmask_s42_valpred.parquet"
+},
+{
+"name": "pmask_s42_stale",
+"cmd": [
+"predict_seq.py",
+"--name",
+"pmask_s42"
+],
+"out": "/root/ecup/artifacts/models/pmask_s42_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/pmask_s42.pt"
+]
+},
+{
+"name": "pmask_s42_refit",
+"cmd": [
+"predict_seq.py",
+"--name",
+"pmask_s42",
+"--refit",
+"--avg-last",
+"2"
+],
+"out": "/root/ecup/artifacts/models/pmask_s42_full_avg2_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/pmask_s42.pt"
+]
+},
+{
+"name": "obs_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"obs_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"46",
+"--seed",
+"42",
+"--obs-mask"
+],
+"out": "/root/ecup/artifacts/models/obs_s42_valpred.parquet"
+},
+{
+"name": "obsp3_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"obsp3_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"40",
+"--val-anchor",
+"2025-12-31",
+"--seed",
+"42",
+"--obs-mask"
+],
+"out": "/root/ecup/artifacts/models/obsp3_s42_valpred.parquet"
+},
+{
+"name": "bg_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"bg_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"46",
+"--seed",
+"42",
+"--back-readouts",
+"18,22,24,30,42,66",
+"--back-hidden",
+"128"
+],
+"out": "/root/ecup/artifacts/models/bg_s42_valpred.parquet"
+},
+{
+"name": "bgp3_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"bgp3_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"40",
+"--val-anchor",
+"2025-12-31",
+"--seed",
+"42",
+"--back-readouts",
+"18,22,24,30,42,66",
+"--back-hidden",
+"128"
+],
+"out": "/root/ecup/artifacts/models/bgp3_s42_valpred.parquet"
+},
+{
+"name": "pm2_s42",
+"cmd": [
+"train_seq.py",
+"--name",
+"pm2_s42",
+"--layers",
+"2",
+"--anchor-stride",
+"1",
+"--tail-days",
+"14",
+"--lr",
+"1e-3",
+"--ctx",
+"--min-anchor",
+"2025-02-26",
+"--hidden",
+"256",
+"--aux",
+"7,14",
+"--n-anchors",
+"46",
+"--seed",
+"42",
+"--pmask-from",
+"2025-11-19",
+"--rec-mask",
+"30"
+],
+"out": "/root/ecup/artifacts/models/pm2_s42_valpred.parquet"
+},
+{
+"name": "pm2_s42_stale",
+"cmd": [
+"predict_seq.py",
+"--name",
+"pm2_s42"
+],
+"out": "/root/ecup/artifacts/models/pm2_s42_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/pm2_s42.pt"
+]
+},
+{
+"name": "pm2_s42_refit",
+"cmd": [
+"predict_seq.py",
+"--name",
+"pm2_s42",
+"--refit",
+"--avg-last",
+"2"
+],
+"out": "/root/ecup/artifacts/models/pm2_s42_full_avg2_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/pm2_s42.pt"
+]
+},
+{
+"name": "obs_s42_stale",
+"cmd": [
+"predict_seq.py",
+"--name",
+"obs_s42"
+],
+"out": "/root/ecup/artifacts/models/obs_s42_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/obs_s42.pt"
+]
+},
+{
+"name": "bg_s42_stale",
+"cmd": [
+"predict_seq.py",
+"--name",
+"bg_s42"
+],
+"out": "/root/ecup/artifacts/models/bg_s42_testpred.parquet",
+"needs": [
+"/root/ecup/artifacts/models/bg_s42.pt"
+]
+}
+]

@@ -1,0 +1,82 @@
+[
+ {
+  "name": "hd_s2",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s2",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "2",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s2_valpred.parquet"
+ },
+ {
+  "name": "hd_s2_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s2",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s2_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s2.pt"
+  ]
+ },
+ {
+  "name": "hd_s2_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s2",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s2_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s2.pt"
+  ]
+ },
+ {
+  "name": "hd_s2_L16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s2",
+   "--pred-anchor",
+   "2026-01-14",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_L16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s2_L16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s2.pt"
+  ]
+ }
+]

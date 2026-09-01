@@ -1,0 +1,61 @@
+[
+ {
+  "name": "auxcnt_s3",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "auxcnt_s3",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "3",
+   "--aux-count",
+   "orddays,nord"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s3_valpred.parquet",
+  "needs": []
+ },
+ {
+  "name": "auxcnt_s3_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s3",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s3_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s3.pt"
+  ]
+ },
+ {
+  "name": "auxcnt_s1_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s1",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s1_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s1.pt"
+  ]
+ }
+]

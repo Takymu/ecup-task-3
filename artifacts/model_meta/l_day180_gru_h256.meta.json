@@ -1,0 +1,18 @@
+{
+  "name": "l_day180_gru_h256",
+  "val_rmsle": 1.6973823691829242,
+  "rank_score": 1.68197837269431,
+  "cell": "gru",
+  "unit": "day",
+  "seq_len": 180,
+  "ch": 8,
+  "hidden": 256,
+  "layers": 2,
+  "n_anchors": 6,
+  "anchor_stride": 2,
+  "lr": 0.001,
+  "seed": 42,
+  "pool": "mean",
+  "fusion_tag": "",
+  "feat_cols": null
+}

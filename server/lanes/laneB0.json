@@ -1,0 +1,50 @@
+[
+ {
+  "name": "mac_s42",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "mac_s42",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "42",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6",
+   "--ctx-set",
+   "v1m"
+  ],
+  "out": "/root/ecup/artifacts/models/mac_s42_valpred.parquet"
+ },
+ {
+  "name": "mac_s42_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "mac_s42",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/mac_s42_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/mac_s42.pt"
+  ]
+ }
+]

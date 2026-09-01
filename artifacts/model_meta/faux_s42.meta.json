@@ -1,0 +1,52 @@
+{
+  "name": "faux_s42",
+  "val_rmsle": 1.6748873991756723,
+  "rank_score": 1.6675269785834728,
+  "cell": "gru",
+  "unit": "week",
+  "seq_len": 66,
+  "ch": 8,
+  "hidden": 256,
+  "layers": 2,
+  "n_anchors": 16,
+  "anchor_stride": 1,
+  "lr": 0.001,
+  "seed": 42,
+  "pool": "mean",
+  "fusion_tag": "",
+  "feat_cols": null,
+  "val_anchor": "2026-01-14",
+  "aux_horizons": [
+    7,
+    14
+  ],
+  "anchor_step_days": 0,
+  "target": "gmv",
+  "aux_weight": 0.3,
+  "tail_days": 14,
+  "loss": "ziln",
+  "mix_w": 1.0,
+  "user_emb": 0,
+  "ctx": true,
+  "ctx_set": "v1",
+  "anchor_offset_days": 0,
+  "warmup": 0.0,
+  "epoch_ranks": [
+    1.6725002755319653,
+    1.674806716143001,
+    1.6690171397123463,
+    1.6696871808280367,
+    1.6702202803612975,
+    1.6692020068532987,
+    1.6675269785834728,
+    1.6686339026203545
+  ],
+  "best_epoch": 7,
+  "avg_ranks": {
+    "avg_last2": 1.6678782851702696,
+    "avg_last3": 1.668039152473907,
+    "avg_last4": 1.6682140089211115,
+    "avg_ep2plus": 1.6682648909305506,
+    "last": 1.6686339026203545
+  }
+}

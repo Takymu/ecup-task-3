@@ -1,0 +1,90 @@
+[
+ {
+  "name": "mr3_s42",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "mr3_s42",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "42",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6",
+   "--coarse",
+   "4",
+   "--coarse-fine",
+   "16"
+  ],
+  "out": "/root/ecup/artifacts/models/mr3_s42_valpred.parquet"
+ },
+ {
+  "name": "mr3p3_s42",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "mr3p3_s42",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "40",
+   "--val-anchor",
+   "2025-12-31",
+   "--seed",
+   "42",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6",
+   "--coarse",
+   "4",
+   "--coarse-fine",
+   "16"
+  ],
+  "out": "/root/ecup/artifacts/models/mr3p3_s42_valpred.parquet"
+ },
+ {
+  "name": "mr3_s42_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "mr3_s42",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/mr3_s42_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/mr3_s42.pt"
+  ]
+ }
+]

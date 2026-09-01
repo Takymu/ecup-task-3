@@ -1,0 +1,142 @@
+[
+ {
+  "name": "hdax_s42",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hdax_s42",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "42",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6",
+   "--aux-count",
+   "orddays,nord",
+   "--short-tokens",
+   "24"
+  ],
+  "out": "/root/ecup/artifacts/models/hdax_s42_valpred.parquet"
+ },
+ {
+  "name": "hdaxp3_s42",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hdaxp3_s42",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "40",
+   "--val-anchor",
+   "2025-12-31",
+   "--seed",
+   "42",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6",
+   "--aux-count",
+   "orddays,nord",
+   "--short-tokens",
+   "24"
+  ],
+  "out": "/root/ecup/artifacts/models/hdaxp3_s42_valpred.parquet"
+ },
+ {
+  "name": "hdax_s42_L16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hdax_s42",
+   "--pred-anchor",
+   "2026-01-14",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_L16"
+  ],
+  "out": "/root/ecup/artifacts/models/hdax_s42_L16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hdax_s42.pt"
+  ]
+ },
+ {
+  "name": "hdaxp3_s42_L16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hdaxp3_s42",
+   "--pred-anchor",
+   "2025-12-31",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_L16"
+  ],
+  "out": "/root/ecup/artifacts/models/hdaxp3_s42_L16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hdaxp3_s42.pt"
+  ]
+ },
+ {
+  "name": "hdax_s42_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hdax_s42",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hdax_s42_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hdax_s42.pt"
+  ]
+ },
+ {
+  "name": "hdax_s42_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hdax_s42",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hdax_s42_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hdax_s42.pt"
+  ]
+ }
+]

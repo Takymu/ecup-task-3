@@ -1,0 +1,16 @@
+# Достаточно для уровня A (пересборка финалов из артефактов репозитория):
+numpy>=1.26
+polars>=1.0
+
+# Полный пайплайн (уровни B и C):
+pandas
+pyarrow
+scikit-learn
+torch>=2.5           # для 5090/Blackwell нужен билд с CUDA 12.8
+lightgbm
+catboost
+xgboost
+optuna
+paramiko
+matplotlib
+tqdm

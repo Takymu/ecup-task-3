@@ -1,0 +1,52 @@
+{
+  "name": "f3sauxp3_s42",
+  "val_rmsle": 1.7168328156653418,
+  "rank_score": 1.6880262810270543,
+  "cell": "gru",
+  "unit": "week",
+  "seq_len": 66,
+  "ch": 8,
+  "hidden": 256,
+  "layers": 2,
+  "n_anchors": 40,
+  "anchor_stride": 1,
+  "lr": 0.001,
+  "seed": 42,
+  "pool": "mean",
+  "fusion_tag": "",
+  "feat_cols": null,
+  "val_anchor": "2025-12-31",
+  "aux_horizons": [
+    7,
+    14
+  ],
+  "anchor_step_days": 0,
+  "target": "gmv",
+  "aux_weight": 0.3,
+  "tail_days": 14,
+  "loss": "ziln",
+  "mix_w": 1.0,
+  "user_emb": 0,
+  "ctx": true,
+  "ctx_set": "v1",
+  "anchor_offset_days": 0,
+  "warmup": 0.0,
+  "epoch_ranks": [
+    1.691266751641957,
+    1.6947698845645267,
+    1.6882997593959586,
+    1.6899869540434866,
+    1.688525638775345,
+    1.6886519790688077,
+    1.6882621474270492,
+    1.6880262810270543
+  ],
+  "best_epoch": 8,
+  "avg_ranks": {
+    "avg_last2": 1.6880778788034525,
+    "avg_last3": 1.6879785985140483,
+    "avg_last4": 1.6878455641172485,
+    "avg_ep2plus": 1.6872582309669166,
+    "last": 1.6880262810270543
+  }
+}

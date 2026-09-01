@@ -1,0 +1,121 @@
+[
+ {
+  "name": "hd_s42_L20",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s42",
+   "--pred-anchor",
+   "2026-01-14",
+   "--hist-len",
+   "20",
+   "--stem-suffix",
+   "_L20"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s42_L20_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s42.pt"
+  ]
+ },
+ {
+  "name": "hd_s42_L24",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s42",
+   "--pred-anchor",
+   "2026-01-14",
+   "--hist-len",
+   "24",
+   "--stem-suffix",
+   "_L24"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s42_L24_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s42.pt"
+  ]
+ },
+ {
+  "name": "hdp3_s42_L20",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hdp3_s42",
+   "--pred-anchor",
+   "2025-12-31",
+   "--hist-len",
+   "20",
+   "--stem-suffix",
+   "_L20"
+  ],
+  "out": "/root/ecup/artifacts/models/hdp3_s42_L20_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hdp3_s42.pt"
+  ]
+ },
+ {
+  "name": "hdp3_s42_L24",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hdp3_s42",
+   "--pred-anchor",
+   "2025-12-31",
+   "--hist-len",
+   "24",
+   "--stem-suffix",
+   "_L24"
+  ],
+  "out": "/root/ecup/artifacts/models/hdp3_s42_L24_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hdp3_s42.pt"
+  ]
+ },
+ {
+  "name": "hd_s42_T20",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s42",
+   "--hist-len",
+   "20",
+   "--stem-suffix",
+   "_T20"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s42_T20_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s42.pt"
+  ]
+ },
+ {
+  "name": "hd_s42_T24",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s42",
+   "--hist-len",
+   "24",
+   "--stem-suffix",
+   "_T24"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s42_T24_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s42.pt"
+  ]
+ },
+ {
+  "name": "auxcnt_s42_refit",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "auxcnt_s42",
+   "--refit",
+   "--avg-last",
+   "2"
+  ],
+  "out": "/root/ecup/artifacts/models/auxcnt_s42_full_avg2_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/auxcnt_s42.pt"
+  ]
+ }
+]

@@ -1,0 +1,23 @@
+{
+  "name": "pact_day_sim",
+  "val_rmsle": 0.5540335079715063,
+  "rank_score": 0.5538681027024399,
+  "cell": "gru",
+  "unit": "day",
+  "seq_len": 413,
+  "ch": 8,
+  "hidden": 256,
+  "layers": 2,
+  "n_anchors": 6,
+  "anchor_stride": 2,
+  "lr": 0.001,
+  "seed": 42,
+  "pool": "mean",
+  "fusion_tag": "",
+  "feat_cols": null,
+  "val_anchor": "2025-10-01",
+  "aux_horizons": [],
+  "anchor_step_days": 0,
+  "target": "active",
+  "aux_weight": 0.3
+}

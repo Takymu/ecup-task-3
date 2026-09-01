@@ -1,0 +1,86 @@
+[
+ {
+  "name": "tres_s42",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "tres_s42",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "42",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6",
+   "--aux-win",
+   "10:10,10:20"
+  ],
+  "out": "/root/ecup/artifacts/models/tres_s42_valpred.parquet"
+ },
+ {
+  "name": "tresp3_s42",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "tresp3_s42",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "40",
+   "--val-anchor",
+   "2025-12-31",
+   "--seed",
+   "42",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6",
+   "--aux-win",
+   "10:10,10:20"
+  ],
+  "out": "/root/ecup/artifacts/models/tresp3_s42_valpred.parquet"
+ },
+ {
+  "name": "tres_s42_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "tres_s42",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/tres_s42_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/tres_s42.pt"
+  ]
+ }
+]

@@ -1,0 +1,36 @@
+{
+  "note": "v15 weights, gru_bag replaced by hyb_bag (lr1e-3, avg2 refits)",
+  "family_weights": {
+    "day413_bag": 0.4,
+    "tab_p131_bag": 0.1,
+    "two_stage_bag": 0.1,
+    "hyb_bag": 0.4
+  },
+  "members": {
+    "day413_bag": [
+      "artifacts/models/l_day413_gru_h256_full_testpred.parquet",
+      "artifacts/models/l_day413_s1_full_testpred.parquet",
+      "artifacts/models/l_day413_s2_full_testpred.parquet",
+      "artifacts/models/l_day413_s3_full_testpred.parquet",
+      "artifacts/models/l_day413_s4_full_testpred.parquet"
+    ],
+    "tab_p131_bag": [
+      "artifacts/models/l_tab_p131_full_testpred.parquet",
+      "artifacts/models/l_tab_p131_s1_full_testpred.parquet",
+      "artifacts/models/l_tab_p131_s2_full_testpred.parquet"
+    ],
+    "two_stage_bag": [
+      "i:\\NSU\\ecup\\task3\\artifacts\\models\\srv_two_stage_full_testpred.parquet",
+      "artifacts/models/two_stage_s1_full_testpred.parquet",
+      "artifacts/models/two_stage_s2_full_testpred.parquet"
+    ],
+    "hyb_bag": [
+      "artifacts/models/l_gru_hyb14_lr1_a16_full_avg2_testpred.parquet",
+      "artifacts/models/l_gru_hyb14_lr1_a16_s1_full_avg2_testpred.parquet",
+      "artifacts/models/l_gru_hyb14_lr1_a16_s2_full_avg2_testpred.parquet",
+      "artifacts/models/l_gru_hyb14_lr1_a16_s3_full_avg2_testpred.parquet",
+      "artifacts/models/l_gru_hyb14_lr1_a16_s4_full_avg2_testpred.parquet",
+      "artifacts/models/l_gru_hyb28_lr1_a16_full_avg2_testpred.parquet"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "rank_blend_val": 1.6664035618043866,
+  "weights": {
+    "l_day413_gru_h256": 0.3333333333333333,
+    "l_gru_a16_s1": 0.3333333333333333,
+    "srv_two_stage": 0.2,
+    "l_gru_h256x2_a16": 0.06666666666666667,
+    "lgbm_srv_dart": 0.06666666666666667
+  },
+  "testpreds": {
+    "l_day413_gru_h256": "artifacts/models/l_day413_gru_h256_full_testpred.parquet",
+    "l_gru_a16_s1": "artifacts/models/l_gru_a16_s1_full_testpred.parquet",
+    "srv_two_stage": "i:\\NSU\\ecup\\task3\\artifacts\\models\\srv_two_stage_full_testpred.parquet",
+    "l_gru_h256x2_a16": "artifacts/models/l_gru_h256x2_a16_full_testpred.parquet",
+    "lgbm_srv_dart": "i:\\NSU\\ecup\\task3\\artifacts\\models\\lgbm_srv_dart_full_testpred.parquet"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "l_gru_hyb28_lr1_a16_s1",
+  "val_rmsle": 1.6843451340270772,
+  "rank_score": 1.668352119428666,
+  "cell": "gru",
+  "unit": "week",
+  "seq_len": 80,
+  "ch": 8,
+  "hidden": 256,
+  "layers": 2,
+  "n_anchors": 16,
+  "anchor_stride": 1,
+  "lr": 0.001,
+  "seed": 1,
+  "pool": "mean",
+  "fusion_tag": "",
+  "feat_cols": null,
+  "val_anchor": "2026-01-14",
+  "aux_horizons": [],
+  "anchor_step_days": 0,
+  "target": "gmv",
+  "aux_weight": 0.3,
+  "tail_days": 28,
+  "epoch_ranks": [
+    1.6719385127304582,
+    1.6750259839087902,
+    1.6717278938395204,
+    1.671597340837237,
+    1.670512968729803,
+    1.6695950985665067,
+    1.669068884647553,
+    1.6683665616620609
+  ],
+  "best_epoch": 8,
+  "avg_ranks": {
+    "avg_last2": 1.6685570574727862,
+    "avg_last3": 1.6686651349058956,
+    "avg_last4": 1.668624112154429,
+    "avg_ep2plus": 1.6694465255272988,
+    "last": 1.6683665616620609
+  }
+}

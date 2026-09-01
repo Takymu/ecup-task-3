@@ -1,0 +1,733 @@
+[
+ {
+  "name": "f3saux_s4",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "f3saux_s4",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "4"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s4_valpred.parquet"
+ },
+ {
+  "name": "f3saux_s4_refit",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "f3saux_s4",
+   "--refit",
+   "--avg-last",
+   "2"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s4_full_avg2_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/f3saux_s4.pt"
+  ]
+ },
+ {
+  "name": "f3saux_s5",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "f3saux_s5",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "5"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s5_valpred.parquet"
+ },
+ {
+  "name": "f3saux_s5_refit",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "f3saux_s5",
+   "--refit",
+   "--avg-last",
+   "2"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s5_full_avg2_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/f3saux_s5.pt"
+  ]
+ },
+ {
+  "name": "f3saux_s6",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "f3saux_s6",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s6_valpred.parquet"
+ },
+ {
+  "name": "f3saux_s6_refit",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "f3saux_s6",
+   "--refit",
+   "--avg-last",
+   "2"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s6_full_avg2_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/f3saux_s6.pt"
+  ]
+ },
+ {
+  "name": "f3saux_s7",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "f3saux_s7",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "7"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s7_valpred.parquet"
+ },
+ {
+  "name": "f3saux_s7_refit",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "f3saux_s7",
+   "--refit",
+   "--avg-last",
+   "2"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s7_full_avg2_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/f3saux_s7.pt"
+  ]
+ },
+ {
+  "name": "f3saux_s8",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "f3saux_s8",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "8"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s8_valpred.parquet"
+ },
+ {
+  "name": "f3saux_s8_refit",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "f3saux_s8",
+   "--refit",
+   "--avg-last",
+   "2"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s8_full_avg2_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/f3saux_s8.pt"
+  ]
+ },
+ {
+  "name": "f3saux_s9",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "f3saux_s9",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "9"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s9_valpred.parquet"
+ },
+ {
+  "name": "f3saux_s9_refit",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "f3saux_s9",
+   "--refit",
+   "--avg-last",
+   "2"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s9_full_avg2_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/f3saux_s9.pt"
+  ]
+ },
+ {
+  "name": "f3saux_s10",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "f3saux_s10",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "10"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s10_valpred.parquet"
+ },
+ {
+  "name": "f3saux_s10_refit",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "f3saux_s10",
+   "--refit",
+   "--avg-last",
+   "2"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s10_full_avg2_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/f3saux_s10.pt"
+  ]
+ },
+ {
+  "name": "f3saux_s11",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "f3saux_s11",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "11"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s11_valpred.parquet"
+ },
+ {
+  "name": "f3saux_s11_refit",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "f3saux_s11",
+   "--refit",
+   "--avg-last",
+   "2"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s11_full_avg2_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/f3saux_s11.pt"
+  ]
+ },
+ {
+  "name": "f3saux_s12",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "f3saux_s12",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "12"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s12_valpred.parquet"
+ },
+ {
+  "name": "f3saux_s12_refit",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "f3saux_s12",
+   "--refit",
+   "--avg-last",
+   "2"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s12_full_avg2_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/f3saux_s12.pt"
+  ]
+ },
+ {
+  "name": "f3saux_s13",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "f3saux_s13",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "13"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s13_valpred.parquet"
+ },
+ {
+  "name": "f3saux_s13_refit",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "f3saux_s13",
+   "--refit",
+   "--avg-last",
+   "2"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s13_full_avg2_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/f3saux_s13.pt"
+  ]
+ },
+ {
+  "name": "f3saux_s14",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "f3saux_s14",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "14"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s14_valpred.parquet"
+ },
+ {
+  "name": "f3saux_s14_refit",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "f3saux_s14",
+   "--refit",
+   "--avg-last",
+   "2"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s14_full_avg2_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/f3saux_s14.pt"
+  ]
+ },
+ {
+  "name": "f3saux_s15",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "f3saux_s15",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "15"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s15_valpred.parquet"
+ },
+ {
+  "name": "f3saux_s15_refit",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "f3saux_s15",
+   "--refit",
+   "--avg-last",
+   "2"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s15_full_avg2_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/f3saux_s15.pt"
+  ]
+ },
+ {
+  "name": "f3saux_s16",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "f3saux_s16",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "16"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s16_valpred.parquet"
+ },
+ {
+  "name": "f3saux_s16_refit",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "f3saux_s16",
+   "--refit",
+   "--avg-last",
+   "2"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s16_full_avg2_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/f3saux_s16.pt"
+  ]
+ },
+ {
+  "name": "f3saux_s17",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "f3saux_s17",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "17"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s17_valpred.parquet"
+ },
+ {
+  "name": "f3saux_s17_refit",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "f3saux_s17",
+   "--refit",
+   "--avg-last",
+   "2"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s17_full_avg2_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/f3saux_s17.pt"
+  ]
+ },
+ {
+  "name": "f3saux_s18",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "f3saux_s18",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "18"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s18_valpred.parquet"
+ },
+ {
+  "name": "f3saux_s18_refit",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "f3saux_s18",
+   "--refit",
+   "--avg-last",
+   "2"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s18_full_avg2_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/f3saux_s18.pt"
+  ]
+ },
+ {
+  "name": "f3saux_s19",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "f3saux_s19",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "19"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s19_valpred.parquet"
+ },
+ {
+  "name": "f3saux_s19_refit",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "f3saux_s19",
+   "--refit",
+   "--avg-last",
+   "2"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s19_full_avg2_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/f3saux_s19.pt"
+  ]
+ },
+ {
+  "name": "f3saux_s20",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "f3saux_s20",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "20"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s20_valpred.parquet"
+ },
+ {
+  "name": "f3saux_s20_refit",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "f3saux_s20",
+   "--refit",
+   "--avg-last",
+   "2"
+  ],
+  "out": "/root/ecup/artifacts/models/f3saux_s20_full_avg2_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/f3saux_s20.pt"
+  ]
+ }
+]

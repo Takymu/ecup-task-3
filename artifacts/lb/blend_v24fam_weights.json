@@ -1,0 +1,63 @@
+{
+  "rank_blend_val": 1.6651854266541755,
+  "family_weights": {
+    "b:ctx": 0.4375,
+    "b:gru_bag": 0.25,
+    "b:day413ctx": 0.125,
+    "b:two_stage_bag": 0.125,
+    "b:tab_p131_bag": 0.0625
+  },
+  "members": {
+    "b:ctx": [
+      "artifacts/models/r2_ctx_full_avg2_testpred.parquet",
+      "artifacts/models/r2_ctx_s1_full_avg2_testpred.parquet",
+      "artifacts/models/r2_ctx_s2_full_avg2_testpred.parquet",
+      "artifacts/models/r2_ctx_s3_full_avg2_testpred.parquet",
+      "artifacts/models/r2_ctx_s4_full_avg2_testpred.parquet",
+      "artifacts/models/r2_ctx_s5_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s6_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s7_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s8_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s9_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s10_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s11_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s12_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s13_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s14_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s15_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s16_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s17_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s18_full_avg2_testpred.parquet"
+    ],
+    "b:gru_bag": [
+      "artifacts/models/l_gru_h256x2_a16_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s1_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s2_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s3_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s4_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s5_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s6_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_c9_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_aux_full_testpred.parquet",
+      "artifacts/models/l_gru_h384_a24_s0_full_testpred.parquet",
+      "artifacts/models/l_gru_h384_a24_s1_full_testpred.parquet"
+    ],
+    "b:day413ctx": [
+      "artifacts/models/n3_day413ctx_s1_full_avg2_testpred.parquet"
+    ],
+    "b:two_stage_bag": [
+      "i:\\NSU\\ecup\\task3\\artifacts\\models\\srv_two_stage_full_testpred.parquet",
+      "artifacts/models/two_stage_s1_full_testpred.parquet",
+      "artifacts/models/two_stage_s2_full_testpred.parquet",
+      "artifacts/models/two_stage_s3_full_testpred.parquet",
+      "artifacts/models/two_stage_s4_full_testpred.parquet"
+    ],
+    "b:tab_p131_bag": [
+      "artifacts/models/l_tab_p131_full_testpred.parquet",
+      "artifacts/models/l_tab_p131_s1_full_testpred.parquet",
+      "artifacts/models/l_tab_p131_s2_full_testpred.parquet",
+      "artifacts/models/l_tab_p131_s3_full_testpred.parquet",
+      "artifacts/models/l_tab_p131_s4_full_testpred.parquet"
+    ]
+  }
+}

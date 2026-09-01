@@ -1,0 +1,127 @@
+{
+  "rank_blend_val": 1.664668627821142,
+  "family_weights": {
+    "i:r2_ctx_s3": 0.16662700695928545,
+    "i:l_day413_a10_s0": 0.16035558825341828,
+    "i:l_gru_a16_s1": 0.10120041978315035,
+    "i:r2_ctx": 0.09020778648717168,
+    "i:l_gru_a16_c9": 0.08278308315152799,
+    "i:n3_day413ctx_s1": 0.06659490624906537,
+    "i:f3_ctx_s16": 0.04640689328754428,
+    "i:two_stage_s2": 0.036926824682249636,
+    "i:l_tab_p131": 0.03437618263793671,
+    "i:l_gru_h384_a24_s1": 0.029584641548927267,
+    "i:two_stage_s3": 0.029112359159827517,
+    "i:l_tab_p131_s2": 0.026967714824857682,
+    "b:ctx": 0.02101794202381906,
+    "i:l_gru_hyb14_lr1_a16_s4": 0.020077797428611172,
+    "i:f3_ctx_s18": 0.017353479853479854,
+    "i:l_tab_p131_s1": 0.013708513708513708,
+    "b:gru_bag": 0.01223006323594027,
+    "i:l_gru_hyb28_lr1_a16_s1": 0.009541847041847042,
+    "i:f3_ctx_s7": 0.005970251618985796,
+    "i:f3_ctx_s10": 0.005555555555555555,
+    "b:two_stage_bag": 0.005,
+    "i:l_tab_mlp_a16_s4": 0.004189560439560439
+  },
+  "members": {
+    "i:r2_ctx_s3": [
+      "artifacts/models/r2_ctx_s3_full_avg2_testpred.parquet"
+    ],
+    "i:l_day413_a10_s0": [
+      "artifacts/models/l_day413_a10_s0_full_testpred.parquet"
+    ],
+    "i:l_gru_a16_s1": [
+      "artifacts/models/l_gru_a16_s1_full_testpred.parquet"
+    ],
+    "i:r2_ctx": [
+      "artifacts/models/r2_ctx_full_avg2_testpred.parquet"
+    ],
+    "i:l_gru_a16_c9": [
+      "artifacts/models/l_gru_a16_c9_full_testpred.parquet"
+    ],
+    "i:n3_day413ctx_s1": [
+      "artifacts/models/n3_day413ctx_s1_full_avg2_testpred.parquet"
+    ],
+    "i:f3_ctx_s16": [
+      "artifacts/models/f3_ctx_s16_full_avg2_testpred.parquet"
+    ],
+    "i:two_stage_s2": [
+      "artifacts/models/two_stage_s2_full_testpred.parquet"
+    ],
+    "i:l_tab_p131": [
+      "artifacts/models/l_tab_p131_full_testpred.parquet"
+    ],
+    "i:l_gru_h384_a24_s1": [
+      "artifacts/models/l_gru_h384_a24_s1_full_testpred.parquet"
+    ],
+    "i:two_stage_s3": [
+      "artifacts/models/two_stage_s3_full_testpred.parquet"
+    ],
+    "i:l_tab_p131_s2": [
+      "artifacts/models/l_tab_p131_s2_full_testpred.parquet"
+    ],
+    "b:ctx": [
+      "artifacts/models/r2_ctx_full_avg2_testpred.parquet",
+      "artifacts/models/r2_ctx_s1_full_avg2_testpred.parquet",
+      "artifacts/models/r2_ctx_s2_full_avg2_testpred.parquet",
+      "artifacts/models/r2_ctx_s3_full_avg2_testpred.parquet",
+      "artifacts/models/r2_ctx_s4_full_avg2_testpred.parquet",
+      "artifacts/models/r2_ctx_s5_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s6_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s7_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s8_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s9_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s10_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s11_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s12_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s13_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s14_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s15_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s16_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s17_full_avg2_testpred.parquet",
+      "artifacts/models/f3_ctx_s18_full_avg2_testpred.parquet"
+    ],
+    "i:l_gru_hyb14_lr1_a16_s4": [
+      "artifacts/models/l_gru_hyb14_lr1_a16_s4_full_avg2_testpred.parquet"
+    ],
+    "i:f3_ctx_s18": [
+      "artifacts/models/f3_ctx_s18_full_avg2_testpred.parquet"
+    ],
+    "i:l_tab_p131_s1": [
+      "artifacts/models/l_tab_p131_s1_full_testpred.parquet"
+    ],
+    "b:gru_bag": [
+      "artifacts/models/l_gru_h256x2_a16_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s1_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s2_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s3_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s4_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s5_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s6_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_c9_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_aux_full_testpred.parquet",
+      "artifacts/models/l_gru_h384_a24_s0_full_testpred.parquet",
+      "artifacts/models/l_gru_h384_a24_s1_full_testpred.parquet"
+    ],
+    "i:l_gru_hyb28_lr1_a16_s1": [
+      "artifacts/models/l_gru_hyb28_lr1_a16_s1_full_avg2_testpred.parquet"
+    ],
+    "i:f3_ctx_s7": [
+      "artifacts/models/f3_ctx_s7_full_avg2_testpred.parquet"
+    ],
+    "i:f3_ctx_s10": [
+      "artifacts/models/f3_ctx_s10_full_avg2_testpred.parquet"
+    ],
+    "b:two_stage_bag": [
+      "i:\\NSU\\ecup\\task3\\artifacts\\models\\srv_two_stage_full_testpred.parquet",
+      "artifacts/models/two_stage_s1_full_testpred.parquet",
+      "artifacts/models/two_stage_s2_full_testpred.parquet",
+      "artifacts/models/two_stage_s3_full_testpred.parquet",
+      "artifacts/models/two_stage_s4_full_testpred.parquet"
+    ],
+    "i:l_tab_mlp_a16_s4": [
+      "artifacts/models/l_tab_mlp_a16_s4_full_testpred.parquet"
+    ]
+  }
+}

@@ -1,0 +1,155 @@
+[
+ {
+  "name": "rd_s2",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "rd_s2",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "2",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6",
+   "--rec-drop",
+   "0.5",
+   "--rec-drop-max",
+   "28"
+  ],
+  "out": "/root/ecup/artifacts/models/rd_s2_valpred.parquet",
+  "needs": []
+ },
+ {
+  "name": "rd_s2_D7",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "rd_s2",
+   "--pred-anchor",
+   "2026-01-14",
+   "--drop-recent",
+   "7",
+   "--stem-suffix",
+   "_D7"
+  ],
+  "out": "/root/ecup/artifacts/models/rd_s2_D7_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/rd_s2.pt"
+  ]
+ },
+ {
+  "name": "rd_s2_D14",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "rd_s2",
+   "--pred-anchor",
+   "2026-01-14",
+   "--drop-recent",
+   "14",
+   "--stem-suffix",
+   "_D14"
+  ],
+  "out": "/root/ecup/artifacts/models/rd_s2_D14_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/rd_s2.pt"
+  ]
+ },
+ {
+  "name": "rd_s2_D28",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "rd_s2",
+   "--pred-anchor",
+   "2026-01-14",
+   "--drop-recent",
+   "28",
+   "--stem-suffix",
+   "_D28"
+  ],
+  "out": "/root/ecup/artifacts/models/rd_s2_D28_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/rd_s2.pt"
+  ]
+ },
+ {
+  "name": "rd_s2_TD7",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "rd_s2",
+   "--drop-recent",
+   "7",
+   "--stem-suffix",
+   "_TD7"
+  ],
+  "out": "/root/ecup/artifacts/models/rd_s2_TD7_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/rd_s2.pt"
+  ]
+ },
+ {
+  "name": "rd_s2_TD14",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "rd_s2",
+   "--drop-recent",
+   "14",
+   "--stem-suffix",
+   "_TD14"
+  ],
+  "out": "/root/ecup/artifacts/models/rd_s2_TD14_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/rd_s2.pt"
+  ]
+ },
+ {
+  "name": "rd_s2_TD28",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "rd_s2",
+   "--drop-recent",
+   "28",
+   "--stem-suffix",
+   "_TD28"
+  ],
+  "out": "/root/ecup/artifacts/models/rd_s2_TD28_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/rd_s2.pt"
+  ]
+ },
+ {
+  "name": "rd_s2_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "rd_s2",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/rd_s2_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/rd_s2.pt"
+  ]
+ }
+]

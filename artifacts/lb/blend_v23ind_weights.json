@@ -1,0 +1,74 @@
+{
+  "rank_blend_val": 1.6646725675441412,
+  "family_weights": {
+    "i:l_day413_a10_s0": 0.19672131147540983,
+    "i:r2_ctx_s3": 0.19672131147540983,
+    "i:r2_ctx": 0.16393442622950818,
+    "i:l_gru_a16_s1": 0.09836065573770492,
+    "i:two_stage_s2": 0.08196721311475409,
+    "i:l_tab_p131": 0.08196721311475409,
+    "i:l_gru_a16_c9": 0.06557377049180328,
+    "i:l_gru_h384_a24_s1": 0.03278688524590164,
+    "b:ctx": 0.01639344262295082,
+    "b:gru_bag": 0.01639344262295082,
+    "i:l_gru_hyb14_lr1_a16_s4": 0.01639344262295082,
+    "i:l_day413_s4": 0.01639344262295082,
+    "i:l_tab_p131_s2": 0.01639344262295082
+  },
+  "members": {
+    "i:l_day413_a10_s0": [
+      "artifacts/models/l_day413_a10_s0_full_testpred.parquet"
+    ],
+    "i:r2_ctx_s3": [
+      "artifacts/models/r2_ctx_s3_full_avg2_testpred.parquet"
+    ],
+    "i:r2_ctx": [
+      "artifacts/models/r2_ctx_full_avg2_testpred.parquet"
+    ],
+    "i:l_gru_a16_s1": [
+      "artifacts/models/l_gru_a16_s1_full_testpred.parquet"
+    ],
+    "i:two_stage_s2": [
+      "artifacts/models/two_stage_s2_full_testpred.parquet"
+    ],
+    "i:l_tab_p131": [
+      "artifacts/models/l_tab_p131_full_testpred.parquet"
+    ],
+    "i:l_gru_a16_c9": [
+      "artifacts/models/l_gru_a16_c9_full_testpred.parquet"
+    ],
+    "i:l_gru_h384_a24_s1": [
+      "artifacts/models/l_gru_h384_a24_s1_full_testpred.parquet"
+    ],
+    "b:ctx": [
+      "artifacts/models/r2_ctx_full_avg2_testpred.parquet",
+      "artifacts/models/r2_ctx_s1_full_avg2_testpred.parquet",
+      "artifacts/models/r2_ctx_s2_full_avg2_testpred.parquet",
+      "artifacts/models/r2_ctx_s3_full_avg2_testpred.parquet",
+      "artifacts/models/r2_ctx_s4_full_avg2_testpred.parquet",
+      "artifacts/models/r2_ctx_s5_full_avg2_testpred.parquet"
+    ],
+    "b:gru_bag": [
+      "artifacts/models/l_gru_h256x2_a16_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s1_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s2_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s3_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s4_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s5_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s6_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_c9_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_aux_full_testpred.parquet",
+      "artifacts/models/l_gru_h384_a24_s0_full_testpred.parquet",
+      "artifacts/models/l_gru_h384_a24_s1_full_testpred.parquet"
+    ],
+    "i:l_gru_hyb14_lr1_a16_s4": [
+      "artifacts/models/l_gru_hyb14_lr1_a16_s4_full_avg2_testpred.parquet"
+    ],
+    "i:l_day413_s4": [
+      "artifacts/models/l_day413_s4_full_testpred.parquet"
+    ],
+    "i:l_tab_p131_s2": [
+      "artifacts/models/l_tab_p131_s2_full_testpred.parquet"
+    ]
+  }
+}

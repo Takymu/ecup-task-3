@@ -1,0 +1,62 @@
+{
+  "note": "LB scores of submissions used as calibration probes. Forms are log-space directions relative to a base sub. MSE(k)=M_base-2k.B+k^T C k; B_i=(M_base-M_probe_i+C_ii)/2 for a probe base+d_i; C from files.",
+  "scores": {
+    "sub_v15_famblend_L233": 1.6526924,
+    "sub_v15_famblend_L238": 1.6534652671,
+    "sub_v15_recshift_L233": 1.6511006,
+    "sub_v15_pact100_L233": 1.6502566,
+    "sub_v15_comb_opt_L233": 1.6481428,
+    "sub_v17x_comb_opt_L233": 1.6489491664,
+    "sub_v18a_comb_opt_L233": 1.6481147051,
+    "sub_comb_slope110_L233": 1.6519468293
+  },
+  "forms_v15_base": {
+    "d1": "log1p(recshift)-log1p(v15)",
+    "d2": "log1p(pact100)-log1p(v15) = lp*(p_act-1) centered",
+    "d4c": "0.1*(lp_comb_opt - 2.33) (probe on top of comb_opt)"
+  },
+  "solutions": {
+    "comb_opt": {
+      "k1": 1.523,
+      "k2": 2.088,
+      "pred": 1.64814,
+      "actual": 1.64814
+    },
+    "comb3_opt": {
+      "k1": 0.796,
+      "k2": 1.888,
+      "s": 0.346,
+      "pred": 1.64747,
+      "actual": null
+    },
+    "comb_s025": {
+      "pred": 1.64765
+    }
+  },
+  "probe3_forms_on_comb3": {
+    "file": "artifacts/probe3_forms.npy (rows: curv, never, ordtoday, lapsed90, heavy20, carttoday_noord; centered; users sorted by user_id)",
+    "defs": {
+      "curv": "0.03*((lp-m)^2 - mean)",
+      "never": "-0.25*[n_buy_days_hist==0]",
+      "ordtoday": "+0.30*[to_ord>0 on 13.02]",
+      "lapsed90": "-0.15*[days_since_last_gmv>90 & n_buy>0]",
+      "heavy20": "+0.10*[n_buy>=20]",
+      "carttoday_noord": "+0.15*[cart on 13.02 & no ord]"
+    },
+    "C": {
+      "curv": 0.0088,
+      "never": 0.00676,
+      "ordtoday": 0.00479,
+      "lapsed90": 0.0024,
+      "heavy20": 0.00219,
+      "carttoday_noord": 0.00154
+    },
+    "priority": [
+      "curv",
+      "never",
+      "ordtoday",
+      "lapsed90"
+    ],
+    "subs": "sub_probe3_<form>_L233.csv (base = sub_comb3_opt_L233)"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "rank_blend_val": 1.664040621288428,
+  "family_weights": {
+    "i:sc_a32_e8": 0.2631578947368421,
+    "i:distill_w3": 0.21052631578947367,
+    "i:l_day413_a10_s0": 0.21052631578947367,
+    "i:a32_s2": 0.10526315789473684,
+    "b:a32": 0.05263157894736842,
+    "i:l_gru_a16_c9": 0.05263157894736842,
+    "i:l_gru_hyb14_lr1_a16_s4": 0.05263157894736842,
+    "i:l_gru_a16_s1": 0.05263157894736842
+  },
+  "members": {
+    "i:sc_a32_e8": [
+      "artifacts/models/sc_a32_e8_full_avg3_dec_testpred.parquet"
+    ],
+    "i:distill_w3": [
+      "artifacts/models/distill_w3_full_testpred.parquet"
+    ],
+    "i:l_day413_a10_s0": [
+      "artifacts/models/l_day413_a10_s0_full_testpred.parquet"
+    ],
+    "i:a32_s2": [
+      "artifacts/models/a32_s2_full_avg3_testpred.parquet"
+    ],
+    "b:a32": [
+      "artifacts/models/sc_a32_e8_full_avg3_dec_testpred.parquet",
+      "artifacts/models/a32_s1_full_avg3_testpred.parquet",
+      "artifacts/models/a32_s2_full_avg3_testpred.parquet",
+      "artifacts/models/a32_s3_full_avg3_testpred.parquet"
+    ],
+    "i:l_gru_a16_c9": [
+      "artifacts/models/l_gru_a16_c9_full_testpred.parquet"
+    ],
+    "i:l_gru_hyb14_lr1_a16_s4": [
+      "artifacts/models/l_gru_hyb14_lr1_a16_s4_full_avg2_testpred.parquet"
+    ],
+    "i:l_gru_a16_s1": [
+      "artifacts/models/l_gru_a16_s1_full_testpred.parquet"
+    ]
+  }
+}

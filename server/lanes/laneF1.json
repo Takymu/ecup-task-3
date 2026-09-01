@@ -1,0 +1,250 @@
+[
+ {
+  "name": "hd_s14",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s14",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "14",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s14_valpred.parquet"
+ },
+ {
+  "name": "hd_s14_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s14",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s14_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s14.pt"
+  ]
+ },
+ {
+  "name": "hd_s14_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s14",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s14_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s14.pt"
+  ]
+ },
+ {
+  "name": "hd_s16",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s16",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "16",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s16_valpred.parquet"
+ },
+ {
+  "name": "hd_s16_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s16",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s16_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s16.pt"
+  ]
+ },
+ {
+  "name": "hd_s16_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s16",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s16_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s16.pt"
+  ]
+ },
+ {
+  "name": "hd_s18",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s18",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "18",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s18_valpred.parquet"
+ },
+ {
+  "name": "hd_s18_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s18",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s18_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s18.pt"
+  ]
+ },
+ {
+  "name": "hd_s18_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s18",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s18_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s18.pt"
+  ]
+ },
+ {
+  "name": "hd_s20",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s20",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "20",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s20_valpred.parquet"
+ },
+ {
+  "name": "hd_s20_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s20",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s20_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s20.pt"
+  ]
+ },
+ {
+  "name": "hd_s20_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s20",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s20_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s20.pt"
+  ]
+ }
+]

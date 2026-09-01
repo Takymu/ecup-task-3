@@ -1,0 +1,39 @@
+{
+  "rank_blend_val": 1.665943911233144,
+  "family_weights": {
+    "gru_bag": 0.4,
+    "day413_bag": 0.4,
+    "tab_p131_bag": 0.1,
+    "two_stage_bag": 0.1
+  },
+  "members": {
+    "gru_bag": [
+      "artifacts/models/l_gru_h256x2_a16_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s1_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s2_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s3_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s4_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s5_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_s6_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_c9_full_testpred.parquet",
+      "artifacts/models/l_gru_a16_aux_full_testpred.parquet"
+    ],
+    "day413_bag": [
+      "artifacts/models/l_day413_gru_h256_full_testpred.parquet",
+      "artifacts/models/l_day413_s1_full_testpred.parquet",
+      "artifacts/models/l_day413_s2_full_testpred.parquet",
+      "artifacts/models/l_day413_s3_full_testpred.parquet",
+      "artifacts/models/l_day413_s4_full_testpred.parquet"
+    ],
+    "tab_p131_bag": [
+      "artifacts/models/l_tab_p131_full_testpred.parquet",
+      "artifacts/models/l_tab_p131_s1_full_testpred.parquet",
+      "artifacts/models/l_tab_p131_s2_full_testpred.parquet"
+    ],
+    "two_stage_bag": [
+      "i:\\NSU\\ecup\\task3\\artifacts\\models\\srv_two_stage_full_testpred.parquet",
+      "artifacts/models/two_stage_s1_full_testpred.parquet",
+      "artifacts/models/two_stage_s2_full_testpred.parquet"
+    ]
+  }
+}

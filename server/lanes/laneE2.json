@@ -1,0 +1,1056 @@
+[
+ {
+  "name": "hd_s4",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s4",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "4",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s4_valpred.parquet"
+ },
+ {
+  "name": "hd_s4_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s4",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s4_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s4.pt"
+  ]
+ },
+ {
+  "name": "hd_s4_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s4",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s4_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s4.pt"
+  ]
+ },
+ {
+  "name": "hd_s5",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s5",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "5",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s5_valpred.parquet"
+ },
+ {
+  "name": "hd_s5_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s5",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s5_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s5.pt"
+  ]
+ },
+ {
+  "name": "hd_s5_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s5",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s5_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s5.pt"
+  ]
+ },
+ {
+  "name": "hd_s6",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s6",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "6",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s6_valpred.parquet"
+ },
+ {
+  "name": "hd_s6_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s6",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s6_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s6.pt"
+  ]
+ },
+ {
+  "name": "hd_s6_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s6",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s6_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s6.pt"
+  ]
+ },
+ {
+  "name": "hd_s7",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s7",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "7",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s7_valpred.parquet"
+ },
+ {
+  "name": "hd_s7_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s7",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s7_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s7.pt"
+  ]
+ },
+ {
+  "name": "hd_s7_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s7",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s7_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s7.pt"
+  ]
+ },
+ {
+  "name": "hd_s8",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s8",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "8",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s8_valpred.parquet"
+ },
+ {
+  "name": "hd_s8_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s8",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s8_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s8.pt"
+  ]
+ },
+ {
+  "name": "hd_s8_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s8",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s8_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s8.pt"
+  ]
+ },
+ {
+  "name": "hd_s9",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s9",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "9",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s9_valpred.parquet"
+ },
+ {
+  "name": "hd_s9_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s9",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s9_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s9.pt"
+  ]
+ },
+ {
+  "name": "hd_s9_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s9",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s9_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s9.pt"
+  ]
+ },
+ {
+  "name": "hd_s10",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s10",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "10",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s10_valpred.parquet"
+ },
+ {
+  "name": "hd_s10_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s10",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s10_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s10.pt"
+  ]
+ },
+ {
+  "name": "hd_s10_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s10",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s10_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s10.pt"
+  ]
+ },
+ {
+  "name": "hd_s11",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s11",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "11",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s11_valpred.parquet"
+ },
+ {
+  "name": "hd_s11_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s11",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s11_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s11.pt"
+  ]
+ },
+ {
+  "name": "hd_s11_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s11",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s11_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s11.pt"
+  ]
+ },
+ {
+  "name": "hd_s12",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s12",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "12",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s12_valpred.parquet"
+ },
+ {
+  "name": "hd_s12_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s12",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s12_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s12.pt"
+  ]
+ },
+ {
+  "name": "hd_s12_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s12",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s12_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s12.pt"
+  ]
+ },
+ {
+  "name": "hd_s13",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s13",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "13",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s13_valpred.parquet"
+ },
+ {
+  "name": "hd_s13_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s13",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s13_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s13.pt"
+  ]
+ },
+ {
+  "name": "hd_s13_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s13",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s13_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s13.pt"
+  ]
+ },
+ {
+  "name": "hd_s14",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s14",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "14",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s14_valpred.parquet"
+ },
+ {
+  "name": "hd_s14_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s14",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s14_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s14.pt"
+  ]
+ },
+ {
+  "name": "hd_s14_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s14",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s14_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s14.pt"
+  ]
+ },
+ {
+  "name": "hd_s15",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s15",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "15",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s15_valpred.parquet"
+ },
+ {
+  "name": "hd_s15_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s15",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s15_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s15.pt"
+  ]
+ },
+ {
+  "name": "hd_s15_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s15",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s15_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s15.pt"
+  ]
+ },
+ {
+  "name": "hd_s16",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s16",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "16",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s16_valpred.parquet"
+ },
+ {
+  "name": "hd_s16_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s16",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s16_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s16.pt"
+  ]
+ },
+ {
+  "name": "hd_s16_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s16",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s16_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s16.pt"
+  ]
+ },
+ {
+  "name": "hd_s17",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s17",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "17",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s17_valpred.parquet"
+ },
+ {
+  "name": "hd_s17_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s17",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s17_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s17.pt"
+  ]
+ },
+ {
+  "name": "hd_s17_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s17",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s17_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s17.pt"
+  ]
+ },
+ {
+  "name": "hd_s18",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s18",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "18",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s18_valpred.parquet"
+ },
+ {
+  "name": "hd_s18_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s18",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s18_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s18.pt"
+  ]
+ },
+ {
+  "name": "hd_s18_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s18",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s18_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s18.pt"
+  ]
+ },
+ {
+  "name": "hd_s19",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s19",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "19",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s19_valpred.parquet"
+ },
+ {
+  "name": "hd_s19_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s19",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s19_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s19.pt"
+  ]
+ },
+ {
+  "name": "hd_s19_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s19",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s19_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s19.pt"
+  ]
+ },
+ {
+  "name": "hd_s20",
+  "cmd": [
+   "train_seq.py",
+   "--name",
+   "hd_s20",
+   "--layers",
+   "2",
+   "--anchor-stride",
+   "1",
+   "--tail-days",
+   "14",
+   "--lr",
+   "1e-3",
+   "--ctx",
+   "--min-anchor",
+   "2025-02-26",
+   "--hidden",
+   "256",
+   "--aux",
+   "7,14",
+   "--n-anchors",
+   "46",
+   "--seed",
+   "20",
+   "--hist-drop",
+   "0.5",
+   "--hist-min",
+   "6"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s20_valpred.parquet"
+ },
+ {
+  "name": "hd_s20_stale",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s20",
+   "--stem-suffix",
+   "_stale"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s20_stale_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s20.pt"
+  ]
+ },
+ {
+  "name": "hd_s20_T16",
+  "cmd": [
+   "predict_seq.py",
+   "--name",
+   "hd_s20",
+   "--hist-len",
+   "16",
+   "--stem-suffix",
+   "_T16"
+  ],
+  "out": "/root/ecup/artifacts/models/hd_s20_T16_testpred.parquet",
+  "needs": [
+   "/root/ecup/artifacts/models/hd_s20.pt"
+  ]
+ }
+]

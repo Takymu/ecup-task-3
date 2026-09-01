@@ -1,0 +1,15 @@
+{
+  "name": "l_gru_h256x2",
+  "val_rmsle": 1.6767838005864313,
+  "rank_score": 1.6748090483349358,
+  "cell": "gru",
+  "unit": "week",
+  "seq_len": 52,
+  "ch": 8,
+  "hidden": 256,
+  "layers": 2,
+  "n_anchors": 8,
+  "anchor_stride": 2,
+  "lr": 0.002,
+  "seed": 42
+}

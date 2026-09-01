@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+output/
+data/train.parquet
+artifacts/features/
+artifacts/seq_cache/
+artifacts/models/
+*.pt
+*_testpred.parquet
+*_valpred.parquet
+*.bak*
+venv/
